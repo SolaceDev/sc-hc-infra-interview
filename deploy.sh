@@ -4,15 +4,8 @@ if [[ "$1" = "help" ]]; then
   echo "This is how you use this script..."
 fi
 
-echo -n "Enter the AWS Access Key ID: "
-read AWS_ACCESS_KEY_ID
-
-export AWS_ACCESS_KEY_ID
-
-echo -n "Enter the AWS Secret Access Key: "
-read AWS_SECRET_ACCESS_KEY
-
-export AWS_SECRET_ACCESS_KEY
+export AWS_ACCESS_KEY_ID="AKIARGVNRBIM7D6FEM9S"
+export AWS_SECRET_ACCESS_KEY="jDR6agy7SeUt7uN1ATEg+tboZObG5IfEKAGn9tRt"
 
 if [[ "$1" = "plan" ]]; then
   terraform plan
